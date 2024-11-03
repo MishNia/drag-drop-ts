@@ -1,0 +1,189 @@
+body{
+	font-family: 'Georgia', serif;
+    background-color: #fdf1f0;
+    color: #333;
+}
+/* Header styling */
+h1 {
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+    color: #d5a6bd;
+    margin-bottom: 20px;
+}
+#footer{
+	height:30px;
+	vertical-align:middle;
+	text-align:right;
+	clear:both;
+	padding-right:3px;
+	background-color:#317082;
+	margin-top:2px;
+	width:790px;
+}
+#footer form{
+	margin:0px;
+	margin-top:2px;
+}
+#dhtmlgoodies_dragDropContainer{	/* Main container for this script */
+	width:1000px;
+	height:600px;
+	background-color:#FFF;
+	-moz-user-select:none;
+	max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+	border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+#dhtmlgoodies_dragDropContainer ul{	/* General rules for all <ul> */
+	margin-top:0px;
+	margin-left:0px;
+	margin-bottom:0px;
+	padding:2px;
+}
+
+#dhtmlgoodies_dragDropContainer li,#dragContent li,li#indicateDestination{	/* Movable items, i.e. <LI> */
+	list-style-type:none;
+	border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+	height:15px;
+	padding:2px;
+	margin-bottom:2px;
+	cursor:pointer;
+	font-size:13px;
+	line-height:15px;
+	background-color: #f3d3e3;
+	text-align: center;
+}
+
+li#indicateDestination{	/* Box indicating where content will be dropped - i.e. the one you use if you don't use arrow */
+	border:1px dotted #600;	
+	background-color:#FFF;
+}
+	
+#dhtmlgoodies_dragDropContainer ul li.correctAnswer{	/* Correctly moved item */
+	background-color:rgb(149, 232, 149);
+	color:#000000;
+}
+#dhtmlgoodies_dragDropContainer ul li.wrongAnswer{	/* Item moved to wrong box */
+	background-color:rgb(241, 169, 169);
+	color:#000000;
+}
+
+
+/* LEFT COLUMN CSS */
+div#dhtmlgoodies_listOfItems{	/* Left column "Available students" */
+	
+	float:left;
+	padding-left:50px;
+	padding-right:10px;
+	padding-top: 70px;
+	
+	/* CSS HACK */
+	width: 180px;	/* IE 5.x */
+	width/* */:/**/160px;	/* Other browsers */
+	width: /**/160px;
+			
+}
+#dhtmlgoodies_listOfItems ul{	/* Left(Sources) column <ul> */
+	height: 380px;;	
+
+}
+	
+div#dhtmlgoodies_listOfItems div{
+	padding-top: 10px;
+	border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);	
+}
+div#dhtmlgoodies_listOfItems div ul{	/* Left column <ul> */
+	margin-left:10px;	/* Space at the left of list - the arrow will be positioned there */
+}
+#dhtmlgoodies_listOfItems div p{	/* Heading above left column */
+	margin:0px;	
+	font-weight:bold;
+	padding-left:12px;
+	margin-bottom:5px;
+
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	color: #d5a6bd;
+}
+/* END LEFT COLUMN CSS */
+
+#dhtmlgoodies_dragDropContainer .mouseover{	/* Mouse over effect DIV box in right column */
+	background-color:#E2EBED;
+	border:1px solid #317082;
+}
+
+/* Start main container CSS */
+
+div#dhtmlgoodies_mainContainer{	/* Right column DIV */
+	padding-top:70px;
+	width:590px;
+	float:left;	
+}
+#dhtmlgoodies_mainContainer div{	/* Parent <div> of small boxes */
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	margin-top:0px;
+	border:1px solid #999;
+	border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);	
+
+	/* CSS HACK */
+	width: 172px;	/* IE 5.x */
+	height: 200px;
+			
+}
+#dhtmlgoodies_mainContainer div ul{
+	margin-left:10px;
+}
+
+#dhtmlgoodies_mainContainer div p{	/* Heading above small boxes */
+	margin:0px;
+	padding:0px;
+	padding-left:12px;
+	font-weight:bold;
+	margin-bottom:5px;
+
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	color: #d5a6bd;
+}
+
+#dhtmlgoodies_mainContainer ul{	/* Small box in right column ,i.e <ul> */
+	width:152px;
+	height:80px;	
+	border:0px;	
+	margin-bottom:0px;
+	overflow:hidden;
+	
+}
+
+#dragContent{	/* Drag container */
+	position:absolute;
+	width:150px;
+	height:15px;
+	display:none;
+	margin:0px;
+	padding:0px;
+	z-index:2000;
+}
+
+#dragDropIndicator{	/* DIV for the small arrow */
+	position:absolute;
+	width:7px;
+	height:10px;
+	display:none;
+	z-index:1000;
+	margin:0px;
+	padding:0px;
+}
+
+.style1 {color: #237a03}
+
